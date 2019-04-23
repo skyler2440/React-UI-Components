@@ -1,15 +1,15 @@
 import React from 'react';
 import './Card.css';
-import CardBanner from './CardBanner';
 import CardContent from './CardContent';
+import CardBanner from './CardBanner';
 
-const MidCards = () => {
-    return(
-        <div className="midCards">
-            <CardBanner/>
-            <CardContent/>
-        </div>
-    );
+const CardContainer = () => {
+  return (
+    <div className="banner-wrapper">
+      <CardBanner />
+      <CardContent />
+    </div>
+  );
+};
 
-}
-export default MidCards;
+export default CardContainer;

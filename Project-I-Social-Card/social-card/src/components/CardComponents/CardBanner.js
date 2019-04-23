@@ -1,12 +1,17 @@
+
 import React from 'react';
 import './Card.css';
-import CardBanner from './CardBanner';
-import CardContent from './CardContent';
 
-const cards = () => {
-    return(
-<div className="containr">
-    <CardContent/>
-    <CardBanner/>
-</div> )};
+const CardBanner = () => {
+  return (
+    <a className="banner-container-wrapper" href="https://reactjs.org">
+      <img
+        alt="react logo"
+        className="banner-img"
+        src="https://ibin.co/3wnC6SgIOJud.png"
+      />
+    </a>
+  );
+};
 
+export default CardBanner;
