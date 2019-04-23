@@ -1,19 +1,15 @@
 import React from 'react';
 import './Header.css';
+import ImageThumbnail from './ImageThumbnail';
+import HeaderTitle from './HeaderTitle';
 
-function Header() {
-     return(
-    <div class="App">
-        <HeaderTitle />
-        <HeaderContent />
-
+const HeaderContainer = () => {
+  return (
+    <div className="container-header">
+      <ImageThumbnail />
+      <HeaderTitle />
     </div>
-     );
-}
-function HeaderTitle() {
-    return(
-<h3>Lambda School</h3>
-    );
-}
+  );
+};
 
-export default Header;
+export default HeaderContainer;
